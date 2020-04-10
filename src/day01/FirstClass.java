@@ -22,5 +22,7 @@ public class FirstClass {                 // class is the most fundamental build
 
         System.out.println(text);
 
+
+
     }
 }
