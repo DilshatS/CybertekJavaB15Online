@@ -14,6 +14,8 @@ public class StringPractice {
 
         System.out.println("my full name is " + fullName);
 
+        System.out.println( firstName + " " + lastName + "\n" + fullName );
+
     }
 
 }
