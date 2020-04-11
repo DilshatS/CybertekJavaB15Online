@@ -18,6 +18,8 @@ public class AmazonPractice {
         System.out.println("I saw " + productName + " " + model + version +
                 " \nhands-free with Alexa \nfor $" + price);
 
+        System.out.println(productName);
+
     }
 
 }
