@@ -2,7 +2,7 @@ package day06;
 
 import java.util.Scanner;
 
-public class ScannerCapturingMultipleWord {
+public class ScannerCapturingOneWord {
 
     public static void main(String[] args) {
 
