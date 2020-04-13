@@ -23,8 +23,10 @@ public class UsingTheValueOfOtherVariables {
         // Create another variable called myOrder and assign the value
         // to same value as yourNumber by copying
         // and just print them out
+        Scanner scan = new Scanner(System.in);
+        System.out.println("What is your order? I want the same!");
 
-        String yourOrder = "Gucci bag";
+        String yourOrder = scan.nextLine();
         String myOrder = yourOrder;
 
         System.out.println("Your order is : " + yourOrder + "\n" +
