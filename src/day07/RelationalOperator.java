@@ -28,6 +28,7 @@ public class RelationalOperator {
         System.out.println( 6 != 10 );
         System.out.println( 6 != 6 );
 
+        // == and != are questions, checking for equality or inequality
 
     }
 
