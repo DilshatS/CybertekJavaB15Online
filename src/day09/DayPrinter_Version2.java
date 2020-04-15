@@ -17,7 +17,7 @@ public class DayPrinter_Version2 {
 
         int dayCode = 7;
         String dayName = ""; // assigning a empty String value
-        //dayName = "Monday";
+        //String dayName;
 
         if (dayCode == 1) {
             dayName = "Monday";
