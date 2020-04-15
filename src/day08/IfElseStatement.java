@@ -34,7 +34,7 @@ public class IfElseStatement {
             System.out.println("go shopping !!!");
             System.out.println("Buy Ice Cream!!!");
         }
-        System.out.println("THE END");
+        System.out.println("THE END OF THE STORY");
     }
 
 }
