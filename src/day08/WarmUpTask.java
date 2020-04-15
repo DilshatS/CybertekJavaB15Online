@@ -17,9 +17,9 @@ public class WarmUpTask {
         //System.out.println( age >= 18);
 
         if (age >= 18){
-            System.out.println("you are ready to vote!!!");
+            System.out.println("you are ready to vote!");
         }else {
-            System.out.println("wait until you are 18!!!");
+            System.out.println("wait until you are 18!");
         }
 
     }
