@@ -22,7 +22,7 @@ public class WarmUpTask2 {
         if ( myFavoriteNumber == 300 ){
             System.out.println("BINGO!!!");
         }else {
-            System.out.println("You are not my best Friend, try again");
+            System.out.println("You are not my best Friend, try again!!!");
         }
 
     }
