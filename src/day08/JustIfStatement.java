@@ -21,7 +21,7 @@ public class JustIfStatement {
             System.out.println("go to court");
         }
         // there is no else, program just move on
-        System.out.println("The end of the story! Move on!");
+        System.out.println("THE END! Move on!");
     }
 
 }
