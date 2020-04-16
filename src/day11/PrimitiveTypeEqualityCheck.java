@@ -1,6 +1,6 @@
 package day11;
 
-public class StringEquality {
+public class PrimitiveTypeEqualityCheck {
 
     public static void main(String[] args) {
 
