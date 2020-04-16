@@ -75,6 +75,13 @@ public class LogicalOperators {
         // System.out.println(10 < x < 60);// error! Can not be applied to boolean, int
         System.out.println( x > 10 && x < 60 );
 
+        // more than 2 conditions at the same time, 3 conditions
+
+        //                        true || false ---> true
+        System.out.println( true || false || false);
+        //                        true && false ---> false
+        System.out.println( true && true && false );
+
     }
 
 }
