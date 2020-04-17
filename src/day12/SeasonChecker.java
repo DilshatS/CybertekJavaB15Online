@@ -32,7 +32,7 @@ public class SeasonChecker {
         }else if (season.equalsIgnoreCase("winter")) {
             System.out.println("Code, Ski, Christmas, New Year, Snowman");
         }else{
-            System.out.println("NOT VALID!!!");
+            System.out.println("NOT VALID!!!PLEASE TRY AGAIN!!!");
         }
     }
 
