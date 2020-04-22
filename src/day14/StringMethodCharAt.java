@@ -17,29 +17,37 @@ public class StringMethodCharAt {
         // A r y a
         System.out.println(c1 + " " + c2 + " " + c3 + " " + c4);
         System.out.println("" + c1 + c2 + c3 + c4);
+        System.out.println("=================");
 
-        String name = "Rukshhona";
+        String name = "Rukshohna";
 
         System.out.print( name.charAt(0) + " ");
         System.out.print( name.charAt(1) + " ");
         System.out.print( name.charAt(2) + " ");
         System.out.print( name.charAt(3) + " ");
         System.out.print( name.charAt(4) + " ");
+        System.out.print( name.charAt(5) + " ");
         System.out.print( name.charAt(6) + " ");
         System.out.print( name.charAt(7) + " ");
-        System.out.print( name.charAt(8) + " ");
-        //System.out.println( name.charAt(7) );
+        System.out.print( name.charAt(8) + " \n");
 
-        System.out.println("\n-----------------");
-        System.out.println( name.charAt(0) );
-        System.out.println( name.charAt(1) );
-        System.out.println( name.charAt(3) );
-        System.out.println( name.charAt(3) );
-        System.out.println( name.charAt(4) );
-        System.out.println( name.charAt(5) );
-        System.out.println( name.charAt(6) );
-        System.out.println( name.charAt(7) );
-        System.out.println( name.charAt(8) );
+        System.out.println( name.charAt(1) + "               " + name.charAt(7) );
+        System.out.println( name.charAt(2) + "               " + name.charAt(6) );
+        System.out.println( name.charAt(3) + "               " + name.charAt(5) );
+        System.out.println( name.charAt(4) + "               " + name.charAt(4) );
+        System.out.println( name.charAt(5) + "               " + name.charAt(3) );
+        System.out.println( name.charAt(6) + "               " + name.charAt(2) );
+        System.out.println( name.charAt(7) + "               " + name.charAt(1) );
+
+        System.out.print( name.charAt(8) + " ");
+        System.out.print( name.charAt(7) + " ");
+        System.out.print( name.charAt(6) + " ");
+        System.out.print( name.charAt(5) + " ");
+        System.out.print( name.charAt(4) + " ");
+        System.out.print( name.charAt(3) + " ");
+        System.out.print( name.charAt(2) + " ");
+        System.out.print( name.charAt(1) + " ");
+        System.out.print( name.charAt(0) + " ");
 
 
     }
