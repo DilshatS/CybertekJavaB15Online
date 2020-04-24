@@ -30,6 +30,7 @@ public class SecondWordGetter {
 
         String firstWord = sentence.substring(0,firstSpaceIndex);
         System.out.println("firstWord = " + firstWord);
+        // how do we print out a variable with value using shortcut : soutv then tab
 
     }
 
