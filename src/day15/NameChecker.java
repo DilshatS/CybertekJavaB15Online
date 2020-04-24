@@ -23,8 +23,12 @@ public class NameChecker {
             System.out.println("Longer name");
         }
         //      true || true ---> true
-        if (name.contains("e") || name.contains("e")){
-            System.out.println("Name contain a or e");
+        if (name.contains("a") && name.contains("e")){
+            System.out.println("Name contain both e and a");
+        }else if (name.contains("e")){
+            System.out.println("Name contain e");
+        }else if (name.contains("a")){
+            System.out.println("Name contain a");
         }else {
             System.out.println("I don't have both a or e in my name");
         }
