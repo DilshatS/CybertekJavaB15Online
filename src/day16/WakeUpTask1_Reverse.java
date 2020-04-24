@@ -24,8 +24,9 @@ public class WakeUpTask1_Reverse {
         // then put the second character at 1 location before first character
 
         // start getting character from last location till first location then save it
+        //word2 += word1.charAt(3) +""+ word1.charAt(2)+ word1.charAt(1) + word1.charAt(0);
+        // extra way to do this but not necessary
 
-        word2 += word1.charAt(3) +""+ word1.charAt(2)+ word1.charAt(1) + word1.charAt(0);
         System.out.println("word2 = " + word2);
 
         // I want to add World at the end of it
