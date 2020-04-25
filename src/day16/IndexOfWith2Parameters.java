@@ -41,6 +41,13 @@ public class IndexOfWith2Parameters {
 
         System.out.println("secondJavaLocation = " + secondJavaLocation);
 
+        // I do not know how many word in this sentence. I only know there 3+ words
+        // I just want to know what is the second word
+        // the word in between first space and second space is second word
+        int firstSpace = name.indexOf(" ");
+        int secondSpace = name.indexOf(" ", firstSpace + 1);
+        System.out.println("Second word in this sentence is : " + name.substring(firstSpace +1, secondSpace));
+
     }
 
 }
