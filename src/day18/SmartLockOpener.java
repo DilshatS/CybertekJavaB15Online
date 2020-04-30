@@ -21,6 +21,8 @@ public class SmartLockOpener {
         String password = scan.next();
 
         while (!password.equals("B15")){
+        // while (!password.equalsIgnoreCase("B15")){
+
             System.out.println("WRONG PASSWORD!!! TRY AGAIN!!!");
             password = scan.next();
         }
