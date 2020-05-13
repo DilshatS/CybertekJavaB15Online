@@ -9,13 +9,14 @@ public class SearchingSomethingInString {
         // --> each character I can use substring(0,1) and so on
         // --> going to 0 to last index --> for loop
         // while I am going through each and every character
+
         // I will check whether current character I am looking at
         // equals to a or A --> currentCharacter.equalsIgnoreCase("a");
         // if it is I will print index println(the variable you use to keep the index)
         // if not --> just move on
         // perform this action until I reach last character if I go over last character index I stop
 
-        String myName = "Dilshat Sadamov";
+        String myName = "Sebastian German";
 
         int charCount = myName.length();
         System.out.println("charCount = " + charCount);
