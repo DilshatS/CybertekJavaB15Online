@@ -11,7 +11,7 @@ public class NameBreaker {
 
             char currentChar = name.charAt(x);
 
-            if (currentChar == 'l') {
+            if (currentChar == 'l' || currentChar == 'L') {
                 System.out.println("FOUND IT!!!");
                 break;
             }
@@ -35,14 +35,12 @@ public class NameBreaker {
 
         for (int x = 0; x < name.length(); x++) {
 
-            char currentChar = name.charAt(x);
-
-            if (currentChar == 'l' || currentChar == 'L') {
+            if (name.substring(x,x+1).equalsIgnoreCase("l")) {
                 System.out.println("FOUND IT!!!");
                 break;
             }
 
-            System.out.println(currentChar);
+            System.out.println(name.substring(x,x+1));
 
         }
 
