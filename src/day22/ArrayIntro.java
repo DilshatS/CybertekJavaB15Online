@@ -68,6 +68,14 @@ public class ArrayIntro {
         data[3] = 9;
         System.out.println(data[3]);
 
+        double[] x = new double[3];
+        x[0] = 1.99;
+        x[1] = 2.45;
+        x[2] = 4.29;
+
+        System.out.println(x[0]);
+        System.out.println(x[1]);
+        System.out.println(x[2]);
 
     }
 
