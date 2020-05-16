@@ -21,7 +21,7 @@ public class LoopingThroughAnArray {
 
         // how do we get the size of any array object
         // array object has a property called length
-
+        // arrayVariable.length will give you the count of items
         int itemCount = scores.length;
         int lastItemIndex = itemCount - 1;
 
