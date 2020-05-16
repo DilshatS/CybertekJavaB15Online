@@ -23,6 +23,20 @@ public class ScannerLoopArray {
             System.out.print(numbers[x]);
         }
 
+//        int[] newNumber = new int[5];
+//
+//        for (int x = 0; x < newNumber.length; x++) {
+//
+//            System.out.println("Enter number : " + (x+1));
+//            newNumber[x] = scan.nextInt();
+//        }
+//
+//        for (int x = 0; x < newNumber.length; x++) {
+//            System.out.print(newNumber[x] + " ");
+//        }
+
     }
 
 }
+
+
