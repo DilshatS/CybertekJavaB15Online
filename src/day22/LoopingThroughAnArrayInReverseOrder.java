@@ -4,20 +4,25 @@ public class LoopingThroughAnArrayInReverseOrder {
 
     public static void main(String[] args) {
 
-        String[] name = new String[7];
-        name[0] = "D";
-        name[1] = "i";
-        name[2] = "l";
-        name[3] = "s";
-        name[4] = "h";
-        name[5] = "a";
-        name[6] = "t";
+        // creating an array object with empty slot
+        int[] scores = new int[4];
+        // assigning value to each index
+        // [0] -> first item
+        scores[0] = 95;
+        scores[1] = 70;
+        scores[2] = 88;
+        scores[3] = 100;
 
-        int nameCount = name.length;
+        int elementCount = scores.length;
+        int lastItemIndex = elementCount-1;
 
-        for (int i = 0; i < nameCount; i++) {
-            System.out.println(name[i] + " - " + i);
+        // we are printing in reverse order so
+        // so we start with highest index till lowest index 0 --> 3 - 0
+
+        for (int x = lastItemIndex; x >= 0; x--) {
+            System.out.println("Index location " + x + " : " + scores[x] );
         }
+
     }
 
 }
