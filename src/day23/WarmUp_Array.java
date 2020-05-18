@@ -30,6 +30,7 @@ public class WarmUp_Array {
         // THIS MUST HAPPEN IN ONE LINE, WE CAN NOT DECLARE FIRST AND ASSIGN LATER
         // int[] nums3 = {11,2,34,4,53,6,3};
 
+        int maxValue = nums[0];
 
         for (int x = nums.length-1; x >= 0; x--) {
             System.out.println("index " + x + " : " + nums[x]);
@@ -55,22 +56,16 @@ public class WarmUp_Array {
 
         System.out.println("sum = " + sum);
 
+        for (int num : nums) {
 
-//        int lastIndex = nums2.length-1;
-//
-//        int lastItem = nums2.length;
+            if (num > maxValue){
+                maxValue = num;
+            }
 
-//        int middleItem = nums.length;
-//        int middle = middleItem/2;
-//        System.out.println(nums[middle]);
-//
-//        for (int x = lastIndex; x >= 0; x--) {
-//            System.out.println(nums2[x]);
-//        }
-//
-//        System.out.println("lastItem = " + lastItem);
-//
-//        System.out.println("middleItem = " + middleItem);
+            System.out.println("maxValue = " + maxValue);
+
+        }
+
 
     }
 
