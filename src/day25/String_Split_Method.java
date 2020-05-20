@@ -44,7 +44,7 @@ public class String_Split_Method {
         String[] splitByIs = sentence2.split("is");
         System.out.println("splitByIs = " + Arrays.toString(splitByIs));
         System.out.println("splitByIs = " + splitByIs);
-
+        // using for each loop to iterate over the resulting array
         for (String eachPiece : splitByIs) {
             System.out.println("eachPiece = <" + eachPiece+">");
 
