@@ -239,6 +239,7 @@ public class Practice_12_12 {
         a = a + b; // a = 10+20 = 30
         b = a - b; // b = 30-20 = 10
         a = a - b; // a = 30-10 = 20
+        // interview question
 
         System.out.println("a = " + a + " " + "b = " + b);
 
