@@ -23,13 +23,21 @@ public class SwappingValues {
 
         // swap the value of first item and last item
         int[] myNumbers = new int[]{10, 40, 30, 7};
-
+        System.out.println(Arrays.toString(myNumbers));
         int temp = myNumbers[0]; // temp now has 10
         myNumbers[0] = myNumbers[myNumbers.length-1]; // last item value become 7
         myNumbers[myNumbers.length-1] = temp; // last item now become 10
 
         System.out.println("fist item "+myNumbers[0]);
         System.out.println("last item " + myNumbers[3]);
+        System.out.println(Arrays.toString(myNumbers));
+
+        //int[] myNumbers = new int[]{10, 40, 30, 7};
+
+        int temp2 = myNumbers[1]; // 40
+        myNumbers[1] = myNumbers[2]; // 30
+        myNumbers[2] = temp2; // 40
+
         System.out.println(Arrays.toString(myNumbers));
 
     }
