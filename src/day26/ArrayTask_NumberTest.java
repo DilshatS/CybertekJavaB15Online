@@ -40,9 +40,9 @@ public class ArrayTask_NumberTest {
         System.out.println("count YES : " + cntLessThan100);
 
         if (cntLessThan100 > 0){
-            finalResult = "YES";
-        }else {
             finalResult = "NO";
+        }else {
+            finalResult = "YES";
         }
 
         System.out.println("finalResult = " + finalResult);
