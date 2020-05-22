@@ -40,6 +40,11 @@ public class SwappingValues {
 
         System.out.println(Arrays.toString(myNumbers));
 
+        // the result of swapping -> reversed array
+
+        // How did I come up with 0   and   3
+        // How did I come up with 0+1 and 3-1=2
+
     }
 
 }
