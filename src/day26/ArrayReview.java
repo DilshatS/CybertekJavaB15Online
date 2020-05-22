@@ -62,9 +62,6 @@ public class ArrayReview {
 
         //just change my int array data type to int to avoid issues
 
-        //1.4 Swap the first item value with last item value
-
-
     }
 
 }
