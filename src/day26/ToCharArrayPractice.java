@@ -40,7 +40,8 @@ public class ToCharArrayPractice {
         do {
             System.out.println("each char is : " + surveyChar[y]);
             y++;
-        }while (y < surveyChar.length);
+        }
+        while (y < surveyChar.length);
 
     }
 
