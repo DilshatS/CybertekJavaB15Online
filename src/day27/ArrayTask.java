@@ -32,11 +32,11 @@ public class ArrayTask {
         int secondMin = scores[0];
         for (int i = 0; i < scores.length; i++) {
 
-            if (scores[i] == min) {
-                continue;
-            }
+//            if (scores[i] == min) {
+//                continue;
+//            }
 
-            if (secondMin > scores[i]) {
+            if (secondMin > scores[i] && scores[i] != min) {
                 secondMin = scores[i];
             }
 
@@ -46,11 +46,11 @@ public class ArrayTask {
         int thirdMin = scores[0];
         for (int i = 0; i < scores.length; i++) {
 
-            if (scores[i] == min || scores[i] == secondMin) {
-                continue;
-            }
+//            if (scores[i] == min || scores[i] == secondMin) {
+//                continue;
+//            }
 
-            if (thirdMin > scores[i]){
+            if (thirdMin > scores[i] && scores[i] != min && scores[i] != secondMin){
                 thirdMin = scores[i];
             }
 
@@ -60,11 +60,11 @@ public class ArrayTask {
         int fourthMin = scores[0];
         for (int i = 0; i < scores.length; i++) {
 
-            if (scores[i] == min || scores[i] == secondMin || scores[i] == thirdMin) {
-                continue;
-            }
+//            if (scores[i] == min || scores[i] == secondMin || scores[i] == thirdMin) {
+//                continue;
+//            }
 
-            if (fourthMin > scores[i]){
+            if (fourthMin > scores[i] && scores[i] != min && scores[i] != secondMin && scores[i] != thirdMin){
                 fourthMin = scores[i];
             }
 
