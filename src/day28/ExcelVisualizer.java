@@ -42,6 +42,8 @@ public class ExcelVisualizer {
         // how many item do I have in first item of this 2D array
         System.out.println(Arrays.toString(myExcel[0])); // seeing what's inside first 1D array
         System.out.println(myExcel[0].length); // getting the length of first 1D array
+        System.out.println(myExcel[1].length); // getting the length of second 1D array
+        System.out.println(myExcel[2].length); // getting the length of third 1D array
 
     }
 
