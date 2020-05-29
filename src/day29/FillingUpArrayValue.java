@@ -7,7 +7,7 @@ public class FillingUpArrayValue {
     public static void main(String[] args) {
 
         // create an array with size 100 and fill it up as below
-
+        // fill up this array with numbers from 1 to 100
         int[] numbers = new int[100];
 
         System.out.println("Before filling up \n" + Arrays.toString(numbers));
