@@ -27,6 +27,7 @@ public class HeroIdentity {
 
         int nameCharCount = fullName.length();
         String stars = "";
+        //String stars = heroCode + "-";
 
         for (int i = 0; i < nameCharCount; i++) {
 
@@ -34,8 +35,12 @@ public class HeroIdentity {
 
         }
 
-        System.out.println(fullName);
-        System.out.println(stars);
+//        System.out.println(fullName);
+//        System.out.println(stars);
+
+        String heroX = heroCode + "-" + stars;
+        System.out.println("hero1 = " + hero1);
+        System.out.println("heroX = " + heroX);
 
     }
 
