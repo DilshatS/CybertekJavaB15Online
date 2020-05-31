@@ -1011,24 +1011,52 @@ public class CarInventory1000 {
         int civicCNT = 0;
         int lexusCNT = 0;
 
-        for (String eachCar : cars) {
-            // What if I want case insensitivity
-            if(eachCar.toLowerCase().startsWith("chevrolet")){
+        for (int x = 0; x < cars.length; x++) {
+
+            //System.out.println(cars[x]);
+            if (cars[x].toLowerCase().contains("chevrolet")){
                 chevyCNT++;
             }
-
-            if (eachCar.toUpperCase().contains("CIVIC")){
+            if (cars[x].contains("Civic")) {
                 civicCNT++;
             }
-
-            if (eachCar.toLowerCase().startsWith("lexus")){
+            if (cars[x].toLowerCase().contains("lexus")) {
                 lexusCNT++;
             }
-
         }
         System.out.println("chevyCNT = " + chevyCNT);
         System.out.println("civicCNT = " + civicCNT);
         System.out.println("lexusCNT = " + lexusCNT);
+
+        // TASK 2 : PRINT ALL LOCATION OF CIVIC in this array
+        // Honda-Civic
+        for (int x = 0; x < cars.length; x++) {
+            //if (cars[x].contains("Civic")){
+            if (cars[x].equals("Honda-Civic")){
+                System.out.println("Civic found at location : " + x);
+            }
+        }
+
+
+
+//        for (String eachCar : cars) {
+//            // What if I want case insensitivity
+//            if(eachCar.toLowerCase().startsWith("chevrolet")){
+//                chevyCNT++;
+//            }
+//
+//            if (eachCar.toUpperCase().contains("CIVIC")){
+//                civicCNT++;
+//            }
+//
+//            if (eachCar.toLowerCase().startsWith("lexus")){
+//                lexusCNT++;
+//            }
+//
+//        }
+//        System.out.println("chevyCNT = " + chevyCNT);
+//        System.out.println("civicCNT = " + civicCNT);
+//        System.out.println("lexusCNT = " + lexusCNT);
 
     }
 
