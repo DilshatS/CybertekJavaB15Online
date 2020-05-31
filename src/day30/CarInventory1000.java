@@ -1014,7 +1014,7 @@ public class CarInventory1000 {
         for (int x = 0; x < cars.length; x++) {
 
             //System.out.println(cars[x]);
-            if (cars[x].toLowerCase().contains("chevrolet")){
+            if (cars[x].toLowerCase().contains("chevrolet")) {
                 chevyCNT++;
             }
             if (cars[x].contains("Civic")) {
@@ -1032,11 +1032,51 @@ public class CarInventory1000 {
         // Honda-Civic
         for (int x = 0; x < cars.length; x++) {
             //if (cars[x].contains("Civic")){
-            if (cars[x].equals("Honda-Civic")){
+            if (cars[x].equals("Honda-Civic")) {
                 System.out.println("Civic found at location : " + x);
             }
         }
 
+        // Task 3 : PRINT make and Model separately in this format
+        // Honda-Civic -->
+        // Car make is Honda and model is Civic
+        // print only Honda brand cars
+
+
+//        String eachCar = "Honda-Civic";
+//        String[] eachSplit = eachCar.split("-");
+//
+//        System.out.println("Car make is " + eachSplit[0] + " Car model is " + eachSplit[1]);
+
+        System.out.println("=======================================");
+
+        // we want to go through each and every car
+        // and we don't need index so we used each loop
+        for (String eachCar : cars) {
+            // we want to do this action only for one type of car brand
+            // so we used start with method to check car brand
+            if (eachCar.startsWith("Honda")) {
+                // we used split method to separate brand and model
+                String[] eachSplit = eachCar.split("-");
+                // first part is brand, second part is model
+                System.out.println("Car make is " + eachSplit[0] + " Car model is " + eachSplit[1]);
+
+            }
+
+        }
+
+        System.out.println("=======================================");
+
+        // we want to go through each and every car
+        // and we don't need index so we used each loop
+        // we want to do this action only for one type of car brand
+        // so we used start with method to check car brand
+        for (String eachCar : cars)
+            if (eachCar.startsWith("Toyota")) {
+                // we used split method to separate brand and model
+                String[] eachSplit = eachCar.split("-");
+                // first part is brand, second part is model
+                System.out.println("Car make is " + eachSplit[0] + " Car model is " + eachSplit[1]);
 
 
 //        for (String eachCar : cars) {
@@ -1057,6 +1097,8 @@ public class CarInventory1000 {
 //        System.out.println("chevyCNT = " + chevyCNT);
 //        System.out.println("civicCNT = " + civicCNT);
 //        System.out.println("lexusCNT = " + lexusCNT);
+
+        }
 
     }
 
