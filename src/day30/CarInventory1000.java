@@ -1092,11 +1092,13 @@ public class CarInventory1000 {
         int countOf2CharModel = 0;
         for (String eachCar : cars){
 
-            String[] eachCarSplit = eachCar.split("-");
+            Arrays.sort(cars.clone());
+
+            String[] eachCarSplit = eachCar.split("-",2);
             String model = eachCarSplit[1];
             // model is second item in splitted array
             //if (eachCarSplit[1].length() == 2){
-            if (model.length() ==  2){
+            if (model.length() == 2){
                 countOf2CharModel++;
                 System.out.println("Cars model with 2 characters : " + eachCar);
 
@@ -1105,9 +1107,6 @@ public class CarInventory1000 {
         }
         System.out.println("count Of Cars with 2 Char char in their Model = " + countOf2CharModel);
 
-        String car = "Lexus-IS-F";
-        String[]carSplit = car.split("-");
-        System.out.println("carSplit = " + Arrays.toString(carSplit));
 
 
 
