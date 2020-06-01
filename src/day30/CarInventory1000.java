@@ -1,5 +1,7 @@
 package day30;
 
+import java.util.Arrays;
+
 public class CarInventory1000 {
 
     public static void main(String[] args) {
@@ -1071,12 +1073,48 @@ public class CarInventory1000 {
         // and we don't need index so we used each loop
         // we want to do this action only for one type of car brand
         // so we used start with method to check car brand
-        for (String eachCar : cars)
+        for (String eachCar : cars) {
             if (eachCar.startsWith("Toyota")) {
                 // we used split method to separate brand and model
                 String[] eachSplit = eachCar.split("-");
                 // first part is brand, second part is model
                 System.out.println("Car make is " + eachSplit[0] + " Car model is " + eachSplit[1]);
+
+            }
+
+        }
+
+        // find all the car with model has only 2 characters
+        // print the out
+        // get the count
+        System.out.println("----- car with model has only 2 characters -----");
+
+        int countOf2CharModel = 0;
+        for (String eachCar : cars){
+
+            String[] eachCarSplit = eachCar.split("-");
+            String model = eachCarSplit[1];
+            // model is second item in splitted array
+            //if (eachCarSplit[1].length() == 2){
+            if (model.length() ==  2){
+                countOf2CharModel++;
+                System.out.println("Cars model with 2 characters : " + eachCar);
+
+            }
+
+        }
+        System.out.println("count Of Cars with 2 Char char in their Model = " + countOf2CharModel);
+
+        String car = "Lexus-IS-F";
+        String[]carSplit = car.split("-");
+        System.out.println("carSplit = " + Arrays.toString(carSplit));
+
+
+
+
+
+
+
 
 
 //        for (String eachCar : cars) {
@@ -1098,7 +1136,7 @@ public class CarInventory1000 {
 //        System.out.println("civicCNT = " + civicCNT);
 //        System.out.println("lexusCNT = " + lexusCNT);
 
-        }
+
 
     }
 
