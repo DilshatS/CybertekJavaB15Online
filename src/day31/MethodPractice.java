@@ -27,7 +27,7 @@ public class MethodPractice {
 
     public static void sayHelloWorld7Times(){
 
-        // piece of code that you want to resume goes here
+        // piece of code that you want to reuse goes here
 
         // 3 print line statement
         System.out.println("Hello world line 1 ");
