@@ -10,7 +10,7 @@ public class SeasonChecker {
         decideSeasonAction("winter");
         decideSeasonAction("Summer");
 
-        String season = "Winter";
+        String season = "Company";
         decideSeasonAction(season);
 
     }
@@ -19,36 +19,35 @@ public class SeasonChecker {
         // this season method parameter can only be accessible inside method body
         //String season = "Winter";
 
-        switch (season) {
-            case "Spring":
-                System.out.println("hiking");
-                break;
-            case "Summer":
-                System.out.println("Swimming");
-                break;
-            case "Fall":
-                System.out.println("Pumpkin picking");
-                break;
-            case "Winter":
-                System.out.println("Go Snowboarding");
-                break;
-            default:
-                System.out.println("INVALID SEASON!!!");
+//        switch (season) {
+//            case "Spring":
+//                System.out.println("hiking");
+//                break;
+//            case "Summer":
+//                System.out.println("Swimming");
+//                break;
+//            case "Fall":
+//                System.out.println("Pumpkin picking");
+//                break;
+//            case "Winter":
+//                System.out.println("Go Snowboarding");
+//                break;
+//            default:
+//                System.out.println("INVALID SEASON!!!");
+//        }
+
+        if (season.equalsIgnoreCase("Winter")){
+            System.out.println("Go Snowboarding");
+        }else if (season.equalsIgnoreCase("Spring")){
+            System.out.println("hiking");
+        }else if (season.equalsIgnoreCase("Fall")){
+            System.out.println("Pumpkin picking");
+        }else if (season.equalsIgnoreCase("Summer")){
+            System.out.println("Swimming");
+        }else {
+            System.out.println("UNKNOWN SEASON");
         }
 
-//        if (season == "Winter" ){
-//            System.out.println("");
-//        }else if (season == "Spring"){
-//            System.out.println();
-//        }else if (season == "Fall"){
-//            System.out.println();
-//        }else if (season == "Summer"){
-//            System.out.println();
-//        }else {
-//            System.out.println("UNKNOWN SEASON");
-//        }
-//
-//    }
 
         // Write a static method called decideSeasonAction
         // It has one String parameter called season
