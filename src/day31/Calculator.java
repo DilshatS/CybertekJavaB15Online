@@ -13,7 +13,7 @@ public class Calculator extends Calculator_V2 {
         add3Numbers(1,5,99);
         add3Numbers(10,5,25);
 
-        calculate('/', 25, 5);
+        calculate(25, 5, '/');
 
     }
 
