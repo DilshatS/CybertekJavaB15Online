@@ -1,6 +1,6 @@
 package day31;
 
-public class Calculator {
+public class Calculator extends Calculator_V2 {
 
     public static void main(String[] args) {
 
@@ -12,6 +12,8 @@ public class Calculator {
 
         add3Numbers(1,5,99);
         add3Numbers(10,5,25);
+
+        calculate('/', 25, 5);
 
     }
 
