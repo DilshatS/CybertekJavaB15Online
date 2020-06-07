@@ -1,0 +1,82 @@
+
+
+            // 100  4
+            // 300  5
+            // 700  6
+            // 1k   7
+            // 2k   10
+            // 4k - 15
+            // 6.5k - 24
+            // 10k - 30
+            // 14k - 35
+            // 20k - 40
+            // 30k - 50
+
+
+
+        System.out.println("==========================");
+
+      System.out.println("chests : " + (4 + 5 + 6 + 7 + 10 + 15 + 24 + 30 + 35 + 40 + 50)); // 226
+
+              System.out.println("total ss : " + (226*5) ); // 1130
+
+              System.out.println(( 900 - 350 ) + " " + ( 900 - 650 ) + " " + ( 900 - 750 ) ); // 950
+              System.out.println(550+250+150); // 950
+              System.out.println(1130-950); // 180
+              System.out.println(180/5); // 36 chests
+
+ =============================================
+ Total
+
+ Cosmic Tremor recipe 2 // -1
+ World Tremor recipe 5 // -2
+
+ Book of fate recipe 3 // done
+ Book of Prophecies 7 // 6
+
+ Panoptic orb recipe 4 // -2
+ Divine orb recipe 8 // -4
+
+ Pastors seal 41 // -24,-2,-1,-1
+ hand of glory 28 // -14,-1,-1
+ Minotaur's Head 20 // -10
+ Flaming heart 19 // -12,-1
+ Desert Blade 13 // -8
+ Giant Slayer 2 //done
+ Siren's song 3 //done
+ Dragon Shield 1 //done
+ Funeral totem 1 //done
+ ==============================================
+
+ Orange 1
+
+ Harunian helm 80 + 80
+ Lycanthrope Hang 80
+ Alchemist Set 80 + 80 + 80
+ Enigma's Chronicles 80 + 80 + 80
+ La Mort's Map 80
+
+
+WHAT DO I GET OUT OF IT
+
+equals
+equalsIgnoreCase
+length
+toUpperCase
+toLowerCase
+startWith
+endWith
+charAt
+contains
+indexOf
+lastIndexOf
+trim
+isEmpty
+replace
+substring
+concat
+
+Random myRd = new Random();
+
+        int randomNumber = myRd.nextInt(10);
+        System.out.println("randomNumber = " + randomNumber);
