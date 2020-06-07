@@ -11,6 +11,12 @@ public class NumberAction {
 
         skipCountBy3From0to50();
 
+        print1toX(10);
+
+        countDownByEvenNumberFrom50to0();
+
+        countDownByEvenNumberFromXtoY(75,0);
+
     }
 
     /**
@@ -34,7 +40,7 @@ public class NumberAction {
         }else {
             System.out.println("they are equal");
         }
-
+        System.out.println();
     }
 
     /**
@@ -46,7 +52,7 @@ public class NumberAction {
     public static void print1toX(int x){
 
         for (int i = 1; i <= x; i++) {
-            System.out.println(i + " ");
+            System.out.print(i + " ");
         }
         System.out.println();
     }
@@ -60,7 +66,7 @@ public class NumberAction {
         for (int i = 0; i < 50; i = i +3) {
             System.out.print(i + " ");
         }
-
+        System.out.println();
     }
 
     /**
@@ -70,7 +76,18 @@ public class NumberAction {
      * for example 50 , 48 , 46 .....0
      */
 
+    public static void countDownByEvenNumberFrom50to0(){
 
+//        for (int i = 50; i >= 0; i--) {
+//
+//            if (i % 2 == 0){
+//                System.out.print(i + " ");
+//            }
+//
+//        }
+//        System.out.println();
+        countDownByEvenNumberFromXtoY(50,0);
+    }
 
     /**
      * instead of countDownByEvenNumberFrom50to0
@@ -79,6 +96,16 @@ public class NumberAction {
      * @param x
      * @param y
      */
+
+    public static void countDownByEvenNumberFromXtoY(int x, int y){
+                // 8    8 >= 10 -> useless loop
+        for (int i = x; i >= y; i--) {
+            if (i % 2 == 0){
+                System.out.print(i + " ");
+            }
+        }
+        System.out.println();
+    }
 
      /**
      * repeatString
