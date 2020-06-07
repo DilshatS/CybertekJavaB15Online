@@ -38,6 +38,20 @@ public class NumberAction {
     }
 
     /**
+     * This method will print from 1 to the number user passed
+     *
+     * @param x
+     */
+
+    public static void print1toX(int x){
+
+        for (int i = 1; i <= x; i++) {
+            System.out.println(i + " ");
+        }
+        System.out.println();
+    }
+
+    /**
      * skipCountBy3From0to50
      */
 
@@ -50,17 +64,13 @@ public class NumberAction {
     }
 
     /**
-     * This method will print from 1 to the number user passed
-     *
-     * @param x
-     */
-
-    /**
      * countDownByEvenNumberFrom50to0
      * create a method that has no parameter
      * and count Down By Even Number From 50 to 0
      * for example 50 , 48 , 46 .....0
      */
+
+
 
     /**
      * instead of countDownByEvenNumberFrom50to0
