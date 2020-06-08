@@ -8,6 +8,8 @@ public class WarmUp {
         System.out.println(getSpelledName("Serra"));
         System.out.println(getSpelledName("Zeynap"));
 
+        System.out.println(getSpelledName2("Dilshat"));
+
     }
 
     /**
@@ -41,8 +43,19 @@ public class WarmUp {
     public static String getSpelledName2(String name){
 
         String result = "";
+        // Keep adding dash until right before last character
+        // then concatenate last character
+        //               <= name.length() - 2
+        for (int i = 0; i < name.length() - 1; i++) {
+            // this loop will add dash after each character
+            // until 2nd character from the last
+            result += name.charAt(i)+"-";
+        }
 
-        return result;
+        // YOUR CODE GOES HERE
+        // result has everything but last character
+        // so now we need to add last character back to the result
+        return result + name.charAt(name.length()-1);
 
     }
 
