@@ -1,6 +1,6 @@
 package day33;
 
-public class NumberActions {
+public class MethodWithReturnPractice {
 
     /**
      * Practicing method with return type
