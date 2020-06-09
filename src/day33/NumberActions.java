@@ -2,6 +2,12 @@ package day33;
 
 public class NumberActions {
 
+    /**
+     * Practicing method with return type
+     * @author : Dilshat
+     * @param args
+     */
+
     public static void main(String[] args) {
 
         System.out.println(getSumFrom1toX(7));
