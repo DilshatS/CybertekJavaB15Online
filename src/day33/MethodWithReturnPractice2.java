@@ -13,6 +13,26 @@ public class MethodWithReturnPractice2 {
         System.out.println(getDaysOfTheWeekFromNumber(5));
         System.out.println(getDaysOfTheWeekFromNumber(15));
         // TODO 2, OPTIONALLY , Create an int Array that has 5 numbers, test your code with those
+        int[] allCodes = {5,3,11,4,33};
+
+        for (int x = 0; x < allCodes.length; x++) {
+
+            String day = getDaysOfTheWeekFromNumber(allCodes[x]);
+            System.out.println("day = " + day);
+
+        }
+
+        System.out.println("---------------");
+
+        for (int eachCode : allCodes) {
+
+            System.out.println("each day : " + getDaysOfTheWeekFromNumber(eachCode));
+
+        }
+
+
+
+        System.out.println(getDaysOfTheWeekFromNumberWithoutSwitch(5));
 
     }
 
@@ -64,6 +84,23 @@ public class MethodWithReturnPractice2 {
 
 //        return dayName;
 
+    }
+
+    /**
+     * Get Days Of The Week From Number Without Switch
+     * @param dayCode
+     * @return
+     */
+    public static String getDaysOfTheWeekFromNumberWithoutSwitch(int dayCode){
+
+        String[] daysArray = {"Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"};
+        String day = "";
+        if (dayCode > 0 && dayCode <= 7){
+            day = daysArray[dayCode-1];
+        }else {
+            day = "FUN DAY!!!";
+        }
+        return day;
     }
 
 }
