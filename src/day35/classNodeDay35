@@ -65,3 +65,6 @@ Using the methods already created in different classes
             // some code here
         }
     }
+
+    I have a employee ID : "FB-457"
+    give me the employee number and store it into a method
