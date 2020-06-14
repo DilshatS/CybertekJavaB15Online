@@ -27,7 +27,7 @@ public class CharacterPractice {
                 System.out.println("str.charAt(" + x + ") = " + str.charAt(x));
                 // appending number character to the result numInStr
                 numInStr = numInStr + str.charAt(x);
-                sum = sum + x;
+                sum += Integer.parseInt(str.charAt(x) + "");
             }
         }
 
