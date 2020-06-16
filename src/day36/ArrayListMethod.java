@@ -43,7 +43,7 @@ public class ArrayListMethod {
         long sum = 0;
         for (int i = 0; i < lst.size(); i++) {
 
-            sum = sum + lst.get(i);
+            sum = sum + lst.get(i); // x in here is index, so it's data type int
 
         }
         System.out.println("sum = " + sum);
