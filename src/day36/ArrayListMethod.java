@@ -48,6 +48,18 @@ public class ArrayListMethod {
         }
         System.out.println("sum = " + sum);
 
+        // TASK : GET THE SUM OF ABOVE ARRAY LIST ITEMS
+
+        long max = lst.get(0);
+        for (int i = 0; i < lst.size(); i++) {
+
+            if (lst.get(i) > max){
+                max = lst.get(i);
+            }
+
+
+        }
+        System.out.println("max = " + max);
     }
 
 }
