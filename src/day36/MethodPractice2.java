@@ -24,6 +24,16 @@ public class MethodPractice2 {
 //        String str = "abc";
 //        String str2 = null;
 
+        int x = 0; // it is primitive type
+        Integer x1 = null; // because it is reverence type, null -> no object
+
+        // ONE THING THAT PRIMITIVE VARIABLE CAN NOT DO IS :
+        // WE CAN NOT ASSIGN IT TO NULL
+
+        // ANY NON-PRIMITIVE VARIABLE (REFERENCE VARIABLES)
+        // CAN ASSIGNED TO NULL VALUE
+        // TO DEFINE, IT IS NOT POINTING TO ANY OBJECT YET
+
     }
 
     /**
