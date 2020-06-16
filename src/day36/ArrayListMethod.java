@@ -27,9 +27,26 @@ public class ArrayListMethod {
         System.out.println("lst.size() = " + lst.size());
 
         // Getting items inside ArrayList object
-        System.out.println("First item is : lst.get(0) = " + lst.get(0));
+        System.out.println("First item is : lst.get(0) = " + lst.get(1));
+        System.out.println("Second item is : lst.get(1) = " + lst.get(2));
+        System.out.println("Third item is : lst.get(3) = " + lst.get(3));
+        System.out.println("Fourth item is : lst.get(4) = " + lst.get(4));
+
+        for (int i = 0; i < lst.size(); i++) {
+
+            System.out.println("item " + lst.get(i));
+
+        }
 
         // TASK : GET THE SUM OF ABOVE ARRAY LIST ITEMS
+
+        long sum = 0;
+        for (int i = 0; i < lst.size(); i++) {
+
+            sum = sum + lst.get(i);
+
+        }
+        System.out.println("sum = " + sum);
 
     }
 
