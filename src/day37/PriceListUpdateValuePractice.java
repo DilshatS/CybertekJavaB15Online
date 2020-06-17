@@ -83,9 +83,9 @@ public class PriceListUpdateValuePractice {
         System.out.println("priceList after cutting = " + priceList);
 
         // swap the first value with the last value
-        Double temp = priceList.get(0);
-        priceList.set(0, priceList.get(priceList.size()-1));
-        priceList.set(priceList.size()-1 , temp);
+        Double temp = priceList.get(0); // store the first value in temp so we can assign it to the last later
+        priceList.set(0, priceList.get(priceList.size()-1)); // assign the last value to the first index
+        priceList.set(priceList.size()-1 , temp);            // assign the saved first value into the last index
 
         System.out.println("\npriceList after swapping first and last value = " + priceList);
 
