@@ -82,6 +82,13 @@ public class PriceListUpdateValuePractice {
         }
         System.out.println("priceList after cutting = " + priceList);
 
+        // swap the first value with the last value
+        Double temp = priceList.get(0);
+        priceList.set(0, priceList.get(priceList.size()-1));
+        priceList.set(priceList.size()-1 , temp);
+
+        System.out.println("\npriceList after swapping first and last value = " + priceList);
+
     }
 
 }
