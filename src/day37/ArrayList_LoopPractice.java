@@ -52,6 +52,15 @@ public class ArrayList_LoopPractice {
         //             last char of String : str.charAt( str.length-1 )
         // size()    : counting the elements inside ArrayList object, it's a method of list Object
         //             last element of an arrayList : lst.get( last.size()-1 )
+
+        // HOW DO WE USE FOR EACH LOOP TO GO THROUGH EACH ITEMS
+        System.out.println("-----------------------");
+        for (String currentName : nameLst) {
+
+            System.out.println("currentName = " + currentName);
+
+        }
+
     }
 
 }
