@@ -22,6 +22,10 @@ public class ArrayListRemoveItemPractice {
 
         // I want to remove item by it's value rather than index
         lst.remove(Integer.valueOf(2));
+
+        // if you try to delete an item that does not exist by value
+        // IT WILL throw IndexOutOfBoundsException
+        lst.remove(112);
         System.out.println("lst = " + lst);
 
     }
