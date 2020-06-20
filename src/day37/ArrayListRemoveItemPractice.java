@@ -25,7 +25,7 @@ public class ArrayListRemoveItemPractice {
 
         // if you try to delete an item that does not exist by value
         // IT WILL throw IndexOutOfBoundsException
-        lst.remove(112);
+        //lst.remove(112);
         System.out.println("lst = " + lst);
 
     }
