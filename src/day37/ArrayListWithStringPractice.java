@@ -1,6 +1,7 @@
 package day37;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class ArrayListWithStringPractice {
@@ -42,6 +43,18 @@ public class ArrayListWithStringPractice {
 //
 //        // does this list contains an item with exact value of man
 //        System.out.println("superHeroes.contains(\"man\") = " + superHeroes.contains("man"));
+
+        List<String> superHeroCopy = new ArrayList<>( superHeroes );
+        System.out.println("superHeroCopy = " + superHeroCopy);
+
+        // THIS WILL CREATE A UNMODIFIABLE LIST !!!
+        List<String> topics = Arrays.asList("Java", "Selenium", "Database", "API");
+        System.out.println("topics = " + topics);
+
+        // HERE COPYING EVERYTHING inside topic to topicsCopy
+        // And it's just regular arrayList, we can do anything with it
+        List<String> topicsCopy = new ArrayList<>(topics);
+        System.out.println("topicsCopy = " + topicsCopy);
 
     }
 
