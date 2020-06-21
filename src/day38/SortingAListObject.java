@@ -29,6 +29,17 @@ public class SortingAListObject {
         Collections.sort( nums, Comparator.reverseOrder() );
         System.out.println("nums after sort2 = " + nums);
 
+        // List itself also has sort method that accept one Comparator Object
+        // simple way to get Comparator objects are
+        // Comparator.naturalOrder() -->> low to high order
+        // Comparator.reverseOrder()  -->> high to low order
+
+        nums.sort( Comparator.naturalOrder() );
+        System.out.println("nums after using nums.sort( Comparator.naturalOrder() ) = " + nums);
+
+        nums.sort( Comparator.reverseOrder() );
+        System.out.println("nums after using nums.sort( Comparator.reverseOrder() ) = " + nums);
+
     }
 
 }
