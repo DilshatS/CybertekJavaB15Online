@@ -27,6 +27,7 @@ public class SortingAListObject {
         // we can get reverse order comparator object by calling
         // Comparator.reverseOrder(), JUST TAKE IT AND USE IT!!!
         Collections.sort( nums, Comparator.reverseOrder() );
+        System.out.println("nums after sort2 = " + nums);
 
     }
 
