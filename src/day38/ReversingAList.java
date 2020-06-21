@@ -21,8 +21,11 @@ public class ReversingAList {
         // after sorting in reverse order line 15
         // 700, 500, 400, 200, 100
 
-        Collections.sort((nums1), Collections.reverseOrder());
+        Collections.sort(nums1, Comparator.reverseOrder()); // or Collections.reverseOrder()
         System.out.println("nums1 after sorting reverse order = " + nums1);
+
+        Collections.sort(nums1, Comparator.naturalOrder());
+        System.out.println("nums1 after sorting natural order = " + nums1);
 
     }
 
