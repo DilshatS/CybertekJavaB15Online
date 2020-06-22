@@ -109,31 +109,44 @@ public class ArrayListPractice {
 
 //        * Task 6 : Print all information about most expensive item.
 
-//        assume first item price is max price before comparing
-
-//        System.out.println("maxPrice = " + maxPrice);
-//        System.out.println("\n-----------Task 6 ----------with product details");
-//        above solution will not work
-//        because we need the location of max price not the price itself
+        // assume first item price is max price before comparing
 //        double maxPrice = Double.parseDouble(productLst.get(0).split(",")[1]);
-//        int maxPriceIndex = 0;
-//
-//        for (int i = 0; i < productLst.size(); i++) {
-//
-//        this is how we get each price part of items details
-//        String priceStr = productLst.get(i).split(",")[1];
-//        this is how we turn the priceString into double data type
-//        double price = Double.parseDouble(priceStr);
-//            if (price > maxPrice) {
-//                maxPrice = price;
-//                maxPriceIndex = i;
-//            }
-//        }
-//        System.out.println("maxPriceIndex = " + maxPriceIndex);
-//        System.out.println("maxPrice = " + maxPrice);
-//        System.out.println("expensive item detail = "
-//                + productLst.get(maxPriceIndex));
 
+//        for (String eachProduct : productLst) {
+//
+//            double price = Double.parseDouble(eachProduct.split(",")[1]);
+//                if ( price > maxPrice){
+//                    maxPrice = price;
+//                }
+//
+//        }
+
+        //System.out.println("maxPrice = " + maxPrice);
+
+
+//      assume first item price is max price before comparing
+
+//      System.out.println("maxPrice = " + maxPrice);
+        System.out.println("\n");
+//      above solution will not work
+//      because we need the location of max price not the price itself
+        double maxPrice = Double.parseDouble(productLst.get(0).split(",")[1]);
+        int maxPriceIndex = 0;
+
+        for (int i = 0; i < productLst.size(); i++) {
+
+//      this is how we get each price part of items details
+        String priceStr = productLst.get(i).split(",")[1];
+//      this is how we turn the priceString into double data type
+        double price = Double.parseDouble(priceStr);
+            if (price > maxPrice) {
+                maxPrice = price;
+                maxPriceIndex = i;
+            }
+        }
+        System.out.println("maxPriceIndex = " + maxPriceIndex);
+        System.out.println("maxPrice = " + maxPrice);
+        System.out.println("expensive item detail = " + productLst.get(maxPriceIndex));
 
     }
 
