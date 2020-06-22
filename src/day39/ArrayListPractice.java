@@ -28,7 +28,7 @@ public class ArrayListPractice {
         System.out.println("productLst = " + productLst);
         System.out.println("productLst element count  = " + productLst.size());
 
-        System.out.println("-----------Task 1 for each loop ----------");
+        System.out.println("\n");
 //        * Task 1 : print only items name
 //        This is for each version
         for (String eachProduct : productLst) {
@@ -38,7 +38,7 @@ public class ArrayListPractice {
             System.out.println("eachProduct name = " + namePart);
 
         }
-        System.out.println("\n-----------Task 1 for loop ----------");
+        System.out.println("\n");
         // This is for loop version
         // we get each product by using get method of ArrayList in for loop
         // then we split by comma to split into 3 part
@@ -52,6 +52,7 @@ public class ArrayListPractice {
 
 //        * Task 2 : print all the prices more than 500
 
+        System.out.println();
         for (String eachProduct : productLst){
             double price = Double.parseDouble(eachProduct.split(",")[1]);
 
@@ -62,6 +63,8 @@ public class ArrayListPractice {
         }
 
 //        * Task 3 : print average price
+
+        System.out.println();
 
         double sum = 0;
         double average = 0;
@@ -76,6 +79,19 @@ public class ArrayListPractice {
         System.out.println("average = " + average);
 
 //        * Task 4 : print all the items name that has less than 20$ monthly payment.
+        System.out.println();
+
+        for (String eachProduct : productLst){
+
+            String name = eachProduct.split(",")[0];
+            double price = Double.parseDouble(eachProduct.split(",")[2]);
+
+            if (price < 20 ){
+                System.out.println(name + " : monthly price = " + price);
+            }
+
+        }
+
 //        * Task 5 : Print the monthly payments of all the iPhone no matter what model.
 //        * Task 6 : Print all information about most expensive item.
 
