@@ -54,7 +54,6 @@ public class ArrayListPractice {
 
         for (String eachProduct : productLst){
             double price = Double.parseDouble(eachProduct.split(",")[1]);
-            System.out.println("price = " + price);
 
             if (price > 500 ){
                 System.out.println("price = " + price);
@@ -63,6 +62,19 @@ public class ArrayListPractice {
         }
 
 //        * Task 3 : print average price
+
+        double sum = 0;
+        double average = 0;
+
+        for (String eachProduct : productLst) {
+            double price = Double.parseDouble(eachProduct.split(",")[1]);
+            sum = sum + price; // sum += price;
+
+        }
+        average = sum / productLst.size();
+        System.out.println("sum = " + sum);
+        System.out.println("average = " + average);
+
 //        * Task 4 : print all the items name that has less than 20$ monthly payment.
 //        * Task 5 : Print the monthly payments of all the iPhone no matter what model.
 //        * Task 6 : Print all information about most expensive item.
