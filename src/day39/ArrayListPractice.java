@@ -93,6 +93,20 @@ public class ArrayListPractice {
         }
 
 //        * Task 5 : Print the monthly payments of all the iPhone no matter what model.
+
+        System.out.println();
+
+        for (String eachProduct : productLst){
+
+            String name = eachProduct.split(",")[0];
+            double price = Double.parseDouble(eachProduct.split(",")[2]);
+
+            if (name.contains("iPhone")){
+                System.out.println(name + " : monthly price = " + price);
+            }
+
+        }
+
 //        * Task 6 : Print all information about most expensive item.
 
 //        assume first item price is max price before comparing
