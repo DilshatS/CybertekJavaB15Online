@@ -82,17 +82,16 @@ public class ArrayListPractice3 {
         ArrayList<String> itemNames = new ArrayList<>();
 
         ArrayList<Double> prices = new ArrayList<>();
-//        prices = Double.parseDouble(productLst.split(",")[1]);
 
         ArrayList<Double> monthlyPayments = new ArrayList<>();
-//        double monthly = Double.parseDouble(productLst.split(",")[2]);
 
         for (String eachProduct : productLst) {
 
             // String eachProduct = "iPhone 6s Plus,449,18.71";
 
             // store the name part into itemName list
-            itemNames.add(eachProduct.split(",")[0]);
+            String itemsPart = eachProduct.split(",")[0];
+            itemNames.add(itemsPart);
 
             // store the name price into prices list
             double pricePart = Double.parseDouble(eachProduct.split(",")[1]);
@@ -104,7 +103,7 @@ public class ArrayListPractice3 {
             monthlyPayments.add(monthlyPart);
 
         }
-
+            // List<Product>
             System.out.println("itemNames = " + itemNames);
             System.out.println("prices = " + prices);
             System.out.println("monthlyPayments = " + monthlyPayments);
