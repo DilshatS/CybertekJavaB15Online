@@ -72,4 +72,18 @@ public class Offer {
 
     }
 
+    /**
+     * Create an instance method called toString
+     * has no parameter
+     * @return String representation of Offer Object
+     * In below format
+     * [Location = Atlanta , Company = Intel , Salary = 280000$ , isFullTime true]
+     */
+
+    public String toString(){
+        String str = ("[ Location = " + location + " | " + "Company = " + company + " | "
+                + "Salary = " + salary + "$ | " + "isFullTime " + isFullTime + " ]");
+        return str;
+    }
+
 }
