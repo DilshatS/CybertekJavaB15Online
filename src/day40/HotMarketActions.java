@@ -54,10 +54,25 @@ public class HotMarketActions {
         myOffers.add(o3);
         myOffers.add(o4);
 
+        System.out.println();
         System.out.println("myOffers -----------------------");
 
         for (Offer each : myOffers) {
             each.displayInformation();
+        }
+
+        System.out.println();
+        System.out.println("myOffers ---------- For Loop ---------");
+
+        for (int x = 0; x < myOffers.size(); x++) {
+
+            // store each item to a variable each
+            Offer each = myOffers.get(x);
+            each.displayInformation();
+
+            // This is one shot version
+            //myOffers.get(x).displayInformation();
+
         }
 
     }
