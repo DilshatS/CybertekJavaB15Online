@@ -18,6 +18,9 @@ public class HotMarketActions3 {
         o1.changeCompany("Netflix");
         o1.displayInformation();
 
+        o1.changeAllInfo("Intel", "Alaska", true, 280000);
+
+
     }
 
 }

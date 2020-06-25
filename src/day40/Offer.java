@@ -42,4 +42,18 @@ public class Offer {
         company = newCompany;
     }
 
+    // Write a method to accept 4 parameters to change all info
+    // about offers
+    public void changeAllInfo(String newCompany, String newLocation, boolean newIsFullTime, int newSalary){
+
+        location = newLocation;
+        company = newCompany;
+        isFullTime = newIsFullTime;
+        salary = newSalary;
+        // an instance method can call another instance method
+        // an instance method can use any instance fields
+        displayInformation();
+
+    }
+
 }
