@@ -19,7 +19,20 @@ public class HotMarketActions3 {
         o1.displayInformation();
 
         o1.changeAllInfo("Intel", "Alaska", true, 280000);
+        // o1.displayInformation();
 
+        // if this guy earn more than 100K
+        // move him to Atlanta
+
+        System.out.println("Is it 100K offer? : " + o1.is100KOffer());
+
+        //boolean result = o1.is100KOffer();
+        //if (result == true){
+        if (o1.is100KOffer()){
+            o1.changeLocation("Atlanta");
+        }
+
+        o1.displayInformation();
 
     }
 
