@@ -2,6 +2,7 @@ package day40;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class HotMarketActions {
 
@@ -46,7 +47,8 @@ public class HotMarketActions {
         // for any reference types : null
         o4.displayInformation();
         // creating ArrayList of Offer to store multiple offer objects
-        ArrayList<Offer> myOffers = new ArrayList<>();
+        //ArrayList<Offer> myOffers = new ArrayList<>();
+        List<Offer> myOffers = new ArrayList<>();
         myOffers.add(o1);
         myOffers.add(o2);
         myOffers.add(o3);
