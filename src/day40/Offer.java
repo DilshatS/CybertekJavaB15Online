@@ -14,8 +14,17 @@ public class Offer {
     // inside instance method we can directly access instance variable
     public void displayInformation(){
 
-        System.out.println("Location + " + location + " | " + "Company = " + company + " | "
-                            + "Salary = " + salary + "$ | " + "isFullTime" + isFullTime);
+        System.out.println("Location = " + location + " | " + "Company = " + company + " | "
+                            + "Salary = " + salary + "$ | " + "isFullTime " + isFullTime);
+
+    }
+
+    // Write a method called turnToFullTime
+    public void turnToFullTime(){
+
+        if ( isFullTime == false ) {
+            isFullTime = true;
+        }
 
     }
 
