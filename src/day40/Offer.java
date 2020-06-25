@@ -24,8 +24,22 @@ public class Offer {
 
         if ( isFullTime == false ) {
             isFullTime = true;
+        }else {
+            System.out.println("ALREADY FULL TIME!!!");
         }
 
+    }
+
+    // Write a method to change the location of the Offer
+    // to the location user passed
+    public void changeLocation(String newLocation){
+
+        location = newLocation;
+
+    }
+
+    public void changeCompany(String newCompany){
+        company = newCompany;
     }
 
 }

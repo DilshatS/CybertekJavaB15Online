@@ -11,7 +11,7 @@ public class HotMarketActions2 {
         o1.isFullTime = true;
         o1.salary = 140000;
 
-        o1.displayInformation();
+//        o1.displayInformation();
 
         Offer o2 = new Offer();
 
@@ -20,7 +20,7 @@ public class HotMarketActions2 {
         o2.isFullTime = true;
         o2.salary = 100000;
 
-        o2.displayInformation();
+//        o2.displayInformation();
 
         Offer o3 = new Offer();
 
@@ -45,6 +45,9 @@ public class HotMarketActions2 {
         o4.salary = o1.salary + o2.salary + o3.salary;
         o4.displayInformation();
         o4.turnToFullTime();
+        o4.turnToFullTime();
+        o4.changeLocation("DC");
+        o4.changeCompany("Netflix");
         o4.displayInformation();
 
     }
