@@ -24,7 +24,7 @@ public class BankAccount {
 
     // showAccountHolderAccountType
     public void showAccountHolderAccountType(){
-        System.out.println("accountType = " + accountType);
+        System.out.println("Accoubt holder is " + accountHolder + " accountType = " + accountType);
     }
 
     // getBalance return the balance
