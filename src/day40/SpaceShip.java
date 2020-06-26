@@ -34,6 +34,8 @@ public class SpaceShip {
 
         }else {
             System.out.println("Invalid Direction");
+            // we set the direction to empty value if user pass wrong direction
+            currentDirection = "";
         }
 
     }
@@ -42,7 +44,8 @@ public class SpaceShip {
      * move the spaceship to 1 block according to the current direction
      */
     public void move1Block(){
-
+        // currentDirection CAN NOT BE NULL
+        // OR IT WILL THROW AN EXCEPTION
         switch (currentDirection) {
             case "right":
                 x += 1;  // increasing x coordinate by 1 if spaceship move right
