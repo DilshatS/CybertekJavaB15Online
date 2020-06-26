@@ -34,12 +34,36 @@ public class BankAccount {
     }
 
     // deposit ( amount )
+    public void deposit( double amount ){
+         balance = balance + amount; // balance += amount;
+    }
+
     // withdraw ( amount )
-    // withdraw ( amount,  )
+    public void withdraw(double amount){
+        balance = balance - amount; // balance -= amount;
+    }
+
+    // withdraw100$Cash()
+    public void withdraw100$Cash(){
+        withdraw(100); // reusing the functionality we already have
+        // or balance = balance - amount;
+    }
 
     // purchaseProduct( productPrice, count )
+    public void purchaseProduct(double productPrice, int count){
+        double totalPrice = productPrice * count;
+        balance = balance - totalPrice;
+        // or withdraw(totalPrice)
+    }
 
-    // withDraw100$Cash()
     // toString
-
+    @Override
+    public String toString() {
+        return "BankAccount{" +
+                "accountType='" + accountType + '\'' +
+                ", accountHolder='" + accountHolder + '\'' +
+                ", accountNumber=" + accountNumber +
+                ", balance=" + balance +
+                '}';
+    }
 }
