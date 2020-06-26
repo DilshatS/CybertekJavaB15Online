@@ -65,6 +65,20 @@ public class SpaceShip {
 
     }
 
+    // add a functionality to move1Block with direction provided in one shot
+
+    /**
+     * This will take a direction and move spaceship object 1 block
+     * @param newDirection
+     */
+    public void move1Block(String newDirection){
+        // we are reusing the functionality we already have to set the direction
+        setDirection(newDirection);
+        // we are reusing the functionality we already have to move1Block
+        move1Block();
+
+    }
+
     // right click in your class anywhere
     // select generate
     // select toString -- > Hit Enter
