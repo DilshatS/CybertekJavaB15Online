@@ -10,6 +10,10 @@ public class TV {
  * behaviours :
             * turnOn
             * turnOff
+            * getCurrentChanel
+            * setCurrentChannel
+            * moveForward
+            * moveBackward
     */
 
    String name;
@@ -24,8 +28,15 @@ public class TV {
         */
        return currentChannel;
    }
+    // we can not set a channel if the TV is off!!!
+   public void setCurrentChannel(int newChanel){
+       if (isOn==true){
+           currentChannel = newChanel;
+       }else {
+           System.out.println("Turn On TV First!");
+       }
 
-
+   }
 
    public void turnOn() {
 
@@ -46,4 +57,12 @@ public class TV {
 
    }
 
+    @Override
+    public String toString() {
+        return "TV{" +
+                "name='" + name + '\'' +
+                ", isOn=" + isOn +
+                ", currentChannel=" + currentChannel +
+                '}';
+    }
 }
