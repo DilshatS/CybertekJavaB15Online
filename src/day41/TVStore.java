@@ -9,11 +9,10 @@ public class TVStore {
 
         System.out.println("t1 = " + t1.toString());
         t1.turnOn();
-        t1.turnOff();
-        t1.turnOff();
-        t1.turnOn();
+        t1.setCurrentChannel(68);
 
-        t1.setCurrentChannel(12);
+        System.out.println(t1.getCurrentChannel());
+        t1.turnOff();
 
         System.out.println("t1 = " + t1.toString());
 

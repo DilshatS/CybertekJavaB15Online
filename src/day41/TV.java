@@ -6,7 +6,6 @@ public class TV {
  * attributes :
             * brand , isOn , currentChannel
  * String , boolean , int   (range from 1-50)
- * String , boolean , int   (range from 0-50)
  * behaviours :
             * turnOn
             * turnOff
@@ -29,7 +28,15 @@ public class TV {
        return currentChannel;
    }
     // we can not set a channel if the TV is off!!!
+    // valid channel is from 0-50
    public void setCurrentChannel(int newChanel){
+
+       // if my channel out of range I want to exit from method
+       if (newChanel < 0 || newChanel > 50){
+           System.out.println("INVALID CHANNEL, GETTING OUT");
+           return; // early exit from the method
+       }
+
        if (isOn==true){
            currentChannel = newChanel;
        }else {
