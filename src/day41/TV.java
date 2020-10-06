@@ -19,12 +19,12 @@ public class TV {
    boolean isOn;
    int currentChannel;
 
+    /**
+     * A method to return the value of current channel for the TV
+     * @return the value of current channel for TV
+     */
    public int getCurrentChannel(){
 
-       /**
-        * A method to return the value of current channel for the TV
-        * @return the value of current channel for TV
-        */
        return currentChannel;
    }
     // we can not set a channel if the TV is off!!!
@@ -42,6 +42,8 @@ public class TV {
        }else {
            System.out.println("Turn On TV First!");
        }
+
+
 
    }
 
