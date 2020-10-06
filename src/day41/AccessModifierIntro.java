@@ -39,7 +39,11 @@ public class AccessModifierIntro {
 
         p1.setName("Emma");
         System.out.println("p1.getName() = " + p1.getName());
-
+        p1.setAge(21);
+        p1.setSsn(123456789);
+        int emmaAge = p1.getAge();
+        System.out.println("p1 = " + p1);
+        System.out.println("emmaAge = " + emmaAge);
 
     }
 

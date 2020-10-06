@@ -17,6 +17,22 @@ public class Person {
         name = newName;
     }
 
+    public int getAge(){
+        return age;
+    }
+
+    public void setAge(int newAge){
+        age = newAge;
+    }
+
+    public long getSsn(){
+        return ssn;
+    }
+
+    public void setSsn(int newSsn){
+        ssn = newSsn;
+    }
+
 // write a method to give value to the field
 
     public void setAll(String newName, int newAge, long newSsn){
