@@ -19,10 +19,7 @@ public class Computer {
     }
 
     public void setBrand(String brand) {
-        // valid ram is 1 - 128
-        if (ram >= 1 && ram <= 128) {
             this.brand = brand;
-        }
     }
 
     public int getRam() {
@@ -30,7 +27,10 @@ public class Computer {
     }
 
     public void setRam(int ram) {
-        this.ram = ram;
+        // valid ram is 1 - 128
+        if (ram >= 1 && ram <= 128) {
+            this.ram = ram;
+        }
     }
 
     public double getPrice() {
