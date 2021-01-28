@@ -28,5 +28,9 @@ public class Bike {
         this.speed = speed;
 
     }
+    // this DOES NOTHING to the gear and speed
+    public Bike(String str){
+        System.out.println("ACCEPT STRING!!!");
+    }
 
 }
