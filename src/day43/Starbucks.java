@@ -7,17 +7,18 @@ public class Starbucks {
 
     public static void main(String[] args) {
 
-        Coffee c1 = new Coffee();
-        c1.setType("Turkish");
-        c1.setCaffeineLevel(8);
-        c1.setPrice(-4.99);
-        System.out.println("c1 = " + c1.toString());
-
-        Coffee c2 = new Coffee("Intemsito", 9);
-        System.out.println("c2 = " + c2);
+//        Coffee c1 = new Coffee();
+//        c1.setType("Turkish");
+//        c1.setCaffeineLevel(8);
+//        c1.setPrice(-4.99);
+//        System.out.println("c1 = " + c1.toString());
+//
+//        Coffee c2 = new Coffee("Intemsito", 9);
+//        System.out.println("c2 = " + c2);
 
         Coffee c3 = new Coffee("Blondy", 5, 1.6);
         System.out.println("c3 before = " + c3);
+
         c3.setPrice(-100);
         System.out.println("c3 after = " + c3);
 

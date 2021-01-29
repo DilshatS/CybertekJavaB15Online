@@ -1,5 +1,15 @@
 package day43;
 
+/**
+ * A Blueprint for Coffee object
+ * With 3 constructors
+ * getters and setters
+ * Price should never be less than 0
+ * No Coffee object with minus price should be created
+ * to minus for any existing coffee object
+ *
+ */
+
 public class Coffee {
 
     private String type;
@@ -22,15 +32,15 @@ public class Coffee {
         this.price = price;
 
         //only set the value if the price is valid
-        if (price > 0) {
-            this.price = price;
-        }else{
-            this.price = 1;
-        }
+//        if (price > 0) {
+//            this.price = price;
+//        }else{
+//            this.price = 1;
+//        }
         // we already have a code to do above logic in setter
         // so we can call the method directly to avoid duplication
         // you can call any methods of same class in constructors
-//        setPrice(price);
+        setPrice(price);
 
     }
 
