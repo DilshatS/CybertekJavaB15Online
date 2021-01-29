@@ -21,11 +21,14 @@ public class Coffee {
         this.caffeineLevel = caffeineLevel;
 
         //only set the value if the price is valid
-        if (price > 0) {
-            this.price = price;
-        }else{
-            this.price = 1;
-        }
+//        if (price > 0) {
+//            this.price = price;
+//        }else{
+//            this.price = 1;
+//        }
+
+        setPrice(price);
+
     }
 
     public String toString() {
@@ -55,8 +58,15 @@ public class Coffee {
     public double getPrice() {
         return price;
     }
-
+    // we want to block the caller of this method
+    // to set invalid price less than 0
+    // if invalid we just set it to 1
+    // for protection
     public void setPrice(double price) {
-        this.price = price;
+        if (price > 0) {
+            this.price = price;
+        }else{
+            this.price = 1;
+        }
     }
 }

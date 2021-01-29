@@ -2,7 +2,6 @@ package day43;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class Starbucks {
 
@@ -11,8 +10,8 @@ public class Starbucks {
         Coffee c1 = new Coffee();
         c1.setType("Turkish");
         c1.setCaffeineLevel(8);
-        c1.setPrice(4.99);
-        System.out.println("c1 = " + c1);
+        c1.setPrice(-4.99);
+        System.out.println("c1 = " + c1.toString());
 
         Coffee c2 = new Coffee("Intemsito", 9);
         System.out.println("c2 = " + c2);
