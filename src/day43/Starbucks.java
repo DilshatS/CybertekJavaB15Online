@@ -17,13 +17,15 @@ public class Starbucks {
         System.out.println("c2 = " + c2);
 
         Coffee c3 = new Coffee("Blondy", 5, 1.6);
-        System.out.println("c3 = " + c3);
+        System.out.println("c3 before = " + c3);
+        c3.setPrice(-100);
+        System.out.println("c3 after = " + c3);
 
         Coffee c4 = new Coffee("Latte", 3, -2.6);
         System.out.println("c4 = " + c4);
 
-        double sumOfAllCoffee = c1.getPrice() + c2.getPrice() + c3.getPrice() + c4.getPrice();
-        System.out.println("sumOfAllCoffee = " + sumOfAllCoffee);
+//        double sumOfAllCoffee = c1.getPrice() + c2.getPrice() + c3.getPrice() + c4.getPrice();
+//        System.out.println("sumOfAllCoffee = " + sumOfAllCoffee);
 
 //        // any non-primitive type can be assigned to null
 //        String str = null;
