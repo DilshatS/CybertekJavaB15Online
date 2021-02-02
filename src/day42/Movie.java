@@ -41,6 +41,10 @@ public class Movie {
         return genre;
     }
 
+    public String getType() {
+        return null;
+    }
+
     @Override
     public String toString() {
         return "Movie{" +
@@ -49,4 +53,5 @@ public class Movie {
                 ", genre='" + genre + '\'' +
                 '}';
     }
+
 }
