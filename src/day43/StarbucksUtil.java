@@ -9,6 +9,14 @@ public class StarbucksUtil {
 
         String myString = new String("Hello");
         printStringInfo(myString);
+        printStringInfo("abc");
+
+        Coffee c1 = new Coffee();
+        printCoffeeInfo(c1);
+
+        // you can either store Coffee object into a variable like above
+        // of your can directly pass a coffee object without storing it
+        printCoffeeInfo( new Coffee("Intensito", 10));
 
         // we would need and object of current class if we wanted call
         // instance method of current class
