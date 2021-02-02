@@ -30,8 +30,8 @@ public class MovieUtility {
 
 
 
-//        // expected to print F-R-O-Z-E-N-2
-//        printMovieNameCharacters(m2);
+        // expected to print F-R-O-Z-E-N-2
+        // printMovieNameCharacters(m2);
 //
 //        // expected to print Frozen2
 //        printShorterMovieName(m2,m3);
